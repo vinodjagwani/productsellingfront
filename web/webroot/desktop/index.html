@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="foodMeApp">
+<head>
+  <meta charset="utf-8">
+  <title>FoodMe</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="navbar" ng-controller="NavbarController">
+    <div class="navbar-inner">
+      <a class="brand" href="#/">FoodMe</a>
+      <ul class="nav">
+        <li ng-class="{active: routeIs('/sendproduct')}"><a href="#/sendproduct">Home</a></li>
+      </ul>
+
+      <ul class="nav pull-right">
+        <li ng-class="{active: routeIs('/help')}"><a href="#/">Help</a></li>
+          <li ng-class=""><a href="javascript:void(0)" ng-click="logout()">Log Out</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <ng-view></ng-view>
+
+</div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-resource.min.js"></script>
+-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-resource.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/SendProductController.js"></script>
+<script src="js/services/sendproduct.js"></script>
+<script src="js/services/localStorage.js"></script>
+<script src="js/controllers/NavbarController.js"></script>
+<script type="text/javascript" src="lib/jquery/jquery-1.8.3.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="lib/jquery/ajaxfileupload.js"></script>
+<script src="lib/angular-fileupload/angular-file-upload.js"></script>
+<script src="lib/angular-fileupload/upload.js"></script>
+<script src="lib/angular-fileupload/angular-file-upload-shim.js"></script>
+<script type="text/javascript" src="lib/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="lib/bootstrap/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+<script type="text/javascript" src="lib/bootstrap/locales/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testclasses>
+  <productsellingfront>
+    <testclass>de.hybris.platform.productsellingfront.jalo.ProductsellingfrontTest</testclass>
+  </productsellingfront>
+</testclasses>

@@ -1,0 +1,83 @@
+<div class="fm-customer-bkg img-rounded"></div>
+
+<form class="form-horizontal" name="customerForm" novalidate>
+	<div class="modal">
+		<div class="modal-header">
+			<h3>Reservation Information</h3>
+		</div>
+		<div class="modal-body">
+
+			<div class="control-group">
+				<label class="control-label" for="code">Restaurant Name</label>
+				<div class="controls">
+					<input type="text" id="code" placeholder="Joe Black"
+						class="input-xlarge" ng-model="code" required>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="description">Description</label>
+				<div class="controls">
+					<input type="text" id="description" placeholder=""
+						class="input-xlarge" ng-model="description" required>
+				</div>
+			</div>
+
+			<div class="control-group">
+				<label class="control-label" for="address">Address</label>
+				<div class="controls">
+					<input type="text" id="address"
+						placeholder="432 Wiggly Rd, Mountain View, 94043"
+						class="input-xlarge" ng-model="address" required>
+				</div>
+			</div>
+
+			
+		
+		<div class="control-group">
+				<label class="control-label" for="productAvailable">Date & Time</label>
+				<div class="controls input-group date form_datetime col-md-5 controls" data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+					<input type="text" id="productAvailable" class="input-xlarge" ng-model="productAvailable" size="16">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+					<span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+				</div>
+			</div>
+		
+
+			<div class="control-group">
+				<label class="control-label" for="price">Price</label>
+				<div class="controls">
+					<input type="text" id="price"
+						placeholder="$50"
+						class="input-xlarge" ng-model="price" required>
+				</div>
+			</div>
+			
+			<div class="control-group">
+				<label class="control-label" for="storename">Store</label>
+				<div class="controls">
+				<select ng-model="availablestores" ng-options="store.name for store in stores" class="input-xlarge"></select>
+				</div>
+			</div>
+
+		<div class="control-group">
+				<label class="control-label" for="photo">Photo</label>
+				<div class="controls">
+					
+     				<input id = "imageFile" name = "imageFile" type="file" />
+					
+				</div>
+			</div>
+	
+
+
+		</div>
+		<div class="modal-footer">
+			<button class="btn btn-primary" ng-disabled="customerForm.$invalid"
+				ng-click="findRestaurants(code, description,address,price)">Submit</button>
+		</div>
+	</div>
+</form>
+
+
+
