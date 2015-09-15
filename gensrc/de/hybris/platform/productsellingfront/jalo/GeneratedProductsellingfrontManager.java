@@ -7,9 +7,6 @@ import de.hybris.platform.productsellingfront.constants.ProductsellingfrontConst
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Generated class for type <code>ProductsellingfrontManager</code>.
- */
 @SuppressWarnings({"deprecation","unused","cast","PMD"})
 public abstract class GeneratedProductsellingfrontManager extends Extension
 {
