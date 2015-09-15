@@ -15,11 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-/**
- * This class provides hooks into the system's initialization and update processes.
- * 
- * @see "https://wiki.hybris.com/display/release4/Hooks+for+Initialization+and+Update+Process"
- */
 
 @SystemSetup(extension = ProductsellingfrontConstants.EXTENSIONNAME)
 public class ProductSellingSystemSetup extends AbstractSystemSetup
